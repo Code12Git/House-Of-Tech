@@ -5,8 +5,8 @@
   "framework": "nextjs",
   "regions": ["iad1"],
   "env": {
-    "MONGODB_URI": "@mongodb-uri",
-    "JWT_SECRET": "@jwt-secret",
+    "MONGODB_URI": "mongodb+srv://Sak12:Saxena@cluster0.os363zi.mongodb.net/houseoftech?retryWrites=true",
+    "JWT_SECRET": "adsdsajdasndans",
     "NEXT_PUBLIC_API_URL": "/api"
   }
 }
