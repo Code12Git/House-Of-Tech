@@ -188,9 +188,8 @@ npm run test:coverage
 👤 Author
 Saksham Saxena
 
-🐙 GitHub: @SakshamSaxena0
-
-💼 LinkedIn: saksham-saxena
+- 🐙 GitHub: [@SakshamSaxena0](https://github.com/Code12Git)
+- 💼 LinkedIn: [saksham-saxena](https://www.linkedin.com/in/saksham7625/)
 
 📄 License
 MIT License
