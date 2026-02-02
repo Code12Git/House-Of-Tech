@@ -7,7 +7,10 @@ if (!MONGODB_URI) {
   throw new Error('Please define the MONGODB_URI environment variable');
 }
 
-console.log('[DB] MONGODB_URI is set:', MONGODB_URI ? 'Yes (hidden for security)' : 'No');
+// Temporarily log the connection string (masked) for debugging
+const maskedUri = MONGODB_URI.replace(/:([^@]+)@/, ':****@');
+console.log('[DB] MONGODB_URI format check:', maskedUri);
+console.log('[DB] MONGODB_URI includes cluster0.os363zi:', MONGODB_URI.includes('cluster0.os363zi') ? 'YES' : 'NO - THIS IS THE PROBLEM!');
 
 interface MongooseCache {
   conn: typeof mongoose | null;
