@@ -31,12 +31,9 @@ export default function CourseModal({
   onSubmit,
   isLoading = false,
 }: CourseModalProps) {
-  const [formData, setFormData] = useState<Partial<CourseFormData>>(initialFormData);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-
-  useEffect(() => {
+  const getInitialFormData = () => {
     if (editingCourse) {
-      setFormData({
+      return {
         title: editingCourse.title,
         instructor: editingCourse.instructor,
         description: editingCourse.description || '',
@@ -46,12 +43,21 @@ export default function CourseModal({
         status: editingCourse.status || 'Draft',
         thumbnail: editingCourse.thumbnail || '',
         category: editingCourse.category || '',
-      });
-    } else {
-      setFormData(initialFormData);
+      };
     }
+    return initialFormData;
+  };
+
+  const [formData, setFormData] = useState<Partial<CourseFormData>>(getInitialFormData);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    // Reset form when modal opens/closes or editingCourse changes
+    setFormData(getInitialFormData());
     setErrors({});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [editingCourse, isOpen]);
+
 
   const validateForm = (): boolean => {
     const newErrors: Record<string, string> = {};

@@ -16,7 +16,6 @@ import {
 
 export default function CourseDetailPage() {
   const [isFavorite, setIsFavorite] = useState(false);
-  const [selectedLesson, setSelectedLesson] = useState(0);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -113,7 +112,7 @@ export default function CourseDetailPage() {
           <div className="lg:col-span-2 space-y-12">
             {/* What You'll Learn */}
             <section>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">What You'll Learn</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">What You&apos;ll Learn</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
                   'Build scalable full-stack applications',
@@ -123,6 +122,7 @@ export default function CourseDetailPage() {
                   'Authentication & Authorization',
                   'Deployment strategies',
                   'Performance optimization techniques',
+                  'Testing best practices',
                   'Testing & debugging best practices',
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3">
@@ -208,7 +208,7 @@ export default function CourseDetailPage() {
                   <p className="text-indigo-600 font-medium mb-3">Senior Full Stack Developer</p>
                   <p className="text-gray-600 mb-4">
                     John is a senior developer with 10+ years of experience in building scalable web
-                    applications. He's passionate about teaching and has trained 50K+ students online.
+                    applications. He&apos;s passionate about teaching and has trained 50K+ students online.
                   </p>
                   <div className="flex gap-4 text-sm text-gray-600">
                     <span>⭐ 4.9 Instructor Rating</span>

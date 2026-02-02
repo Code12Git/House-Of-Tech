@@ -5,7 +5,6 @@ import {
   Upload,
   X,
   Plus,
-  BookOpen,
   Eye,
   Save,
   ArrowLeft,

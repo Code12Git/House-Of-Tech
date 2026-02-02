@@ -3,8 +3,6 @@
 import React, { useState } from 'react';
 import {
   Settings,
-  Bell,
-  Lock,
   CreditCard,
   HelpCircle,
   LogOut,
@@ -102,7 +100,7 @@ export default function SettingsPage() {
                       defaultValue="john@example.com"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     />
-                    <p className="text-xs text-gray-500 mt-2">We'll send important updates to this email</p>
+                    <p className="text-xs text-gray-500 mt-2">We&apos;ll send important updates to this email</p>
                   </div>
 
                   {/* Account Type */}

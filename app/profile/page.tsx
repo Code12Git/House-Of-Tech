@@ -2,9 +2,6 @@
 
 import React, { useState } from 'react';
 import {
-  User,
-  Mail,
-  Phone,
   MapPin,
   Edit2,
   Save,
