@@ -54,8 +54,9 @@ jobs:
       - name: Build application
         run: npm run build
         env:
-          NEXT_MONGO_URI: ${{ secrets.NEXT_MONGO_URI }}
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          NEXT_PUBLIC_API_URL: /api
 
   # Deploy to Vercel (Production)
   deploy-production:
