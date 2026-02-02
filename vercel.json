@@ -5,8 +5,8 @@
   "framework": "nextjs",
   "regions": ["iad1"],
   "env": {
-    "MONGODB_URI": "mongodb+srv://Sak12:Saxena@cluster0.os363zi.mongodb.net/houseoftech?retryWrites=true",
-    "JWT_SECRET": "adsdsajdasndans",
+    "MONGODB_URI": "mongodb+srv://username:password@cluster.mongodb.net/database?retryWrites=true",
+    "JWT_SECRET": "your-super-secret-jwt-key-minimum-32-characters-long",
     "NEXT_PUBLIC_API_URL": "/api"
   }
 }
